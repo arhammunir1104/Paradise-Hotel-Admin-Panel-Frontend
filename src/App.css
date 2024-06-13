@@ -1,0 +1,13 @@
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px;  /* Adjust width as needed */
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Track color */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3B82F6;  /* Thumb color */
+    border-radius: 5px;     /* Rounded corners */
+}
