@@ -24,6 +24,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { CompleteProfile } from './Pages/CompleteProfile';
 import { Error2 } from './Pages/Error2';
 import { UpdateRoom } from './Pages/UpdateRoom';
+import { UpdateHotel } from './Pages/UpdateHotel';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -45,6 +46,7 @@ function App() {
     <Route path='/reservation/:id' Component={ReservationDetails}></Route>
     <Route path='/add/hotel' Component={AddHotel}></Route>
     <Route path='/complete/:id' Component={CompleteProfile}></Route>
+    <Route path='/update' Component={UpdateHotel}></Route>
     <Route path='/add/room' Component={AddRoom}></Route>
     <Route path='/updateroom/:id' Component={UpdateRoom}></Route>
     <Route path='/a/room/:id' Component={RoomImage}></Route>

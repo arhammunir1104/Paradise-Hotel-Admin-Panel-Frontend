@@ -12,6 +12,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import ApartmentIcon from '@mui/icons-material/Apartment';
+import UpdateIcon from '@mui/icons-material/Update';
 import DoorSlidingIcon from '@mui/icons-material/DoorSliding';1
 import AddIcon from '@mui/icons-material/Add';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
@@ -82,6 +83,17 @@ function NavLinks() {
                     <DashboardIcon /> 
                   </ListItemIcon>
                   <ListItemText primary={"Dashboard"} />
+                </ListItemButton>
+              </ListItem>
+                </NavLink>
+
+                <NavLink to="/update">
+            <ListItem key={"Update Profile"} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <UpdateIcon /> 
+                  </ListItemIcon>
+                  <ListItemText primary={"Update Profile"} />
                 </ListItemButton>
               </ListItem>
                 </NavLink>

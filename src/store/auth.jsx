@@ -380,6 +380,28 @@ export let AuthProvider = ({children})=>{
         }
     };
 
+    
+    async function getHotelDataUpdate(){
+        // console.log(d);
+        let token = get_token();
+        try{    
+            let data = await fetch("http://localhost:3000/getHotelData", {
+                method : "POST",
+                headers: {
+                   "Content-Type": "application/json",
+                },
+                body: JSON.stringify({token})
+        });
+        // console.log(data);
+        let res= await data.json();
+        // console.log(res);
+        return(res);
+        }
+        catch(e){
+            console.log("Room Status Changin Error",e);
+        }
+    };
+
     return(
         <AuthContext.Provider value={{
             // getHotelData,
@@ -399,7 +421,8 @@ export let AuthProvider = ({children})=>{
             cancelReservation,
             closeReservation,
             addHotel,
-            getHotelDetials
+            getHotelDetials,
+            getHotelDataUpdate
                 
             
             }}>
