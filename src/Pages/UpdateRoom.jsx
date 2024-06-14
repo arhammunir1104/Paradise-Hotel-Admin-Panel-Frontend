@@ -71,7 +71,7 @@ function UpdateRoom() {
                 room_des : userInput.room_des,
             };
             console.log(d)
-            let data = await fetch("http://localhost:3000/updateroom", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/updateroom", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",

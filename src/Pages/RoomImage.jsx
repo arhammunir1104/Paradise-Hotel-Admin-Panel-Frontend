@@ -56,7 +56,7 @@ function RoomImage() {
             formData.append("img5", e.target.img5.files[0]);
             formData.append("img6", e.target.img6.files[0]);
 
-            let data = await fetch("http://localhost:3000/uploadroomimage", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/uploadroomimage", {
                 method: "POST",
                 body: formData,
               })

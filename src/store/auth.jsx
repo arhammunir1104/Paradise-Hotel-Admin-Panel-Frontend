@@ -9,7 +9,7 @@ export let AuthProvider = ({children})=>{
             token
         }
         try{
-            let data = await fetch("http://localhost:3000/admin_verify", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/admin_verify", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export let AuthProvider = ({children})=>{
             }
             else{        
                 console.log(token);        
-                let data = await fetch("http://localhost:3000/logout", {
+                let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/logout", {
                     method : "POST",
                     headers: {
                        "Content-Type": "application/json",
@@ -69,7 +69,7 @@ export let AuthProvider = ({children})=>{
     async function dashboard_data(){
         try{
             let token =  get_token();
-            let data = await fetch("http://localhost:3000/dashboarddata", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/dashboarddata", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -89,7 +89,7 @@ export let AuthProvider = ({children})=>{
     async function getRoomsData(){
         try{    
             let token =  get_token();
-            let data = await fetch("http://localhost:3000/find/rooms", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/find/rooms", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -108,7 +108,7 @@ export let AuthProvider = ({children})=>{
     async function getHotelDetials(){
         try{    
             let token =  get_token();
-            let data = await fetch("http://localhost:3000/hotel_details", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/hotel_details", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -131,7 +131,7 @@ export let AuthProvider = ({children})=>{
             room_id: room_id
         };
         try{    
-            let data = await fetch("http://localhost:3000/room/change/", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/room/change/", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -149,7 +149,7 @@ export let AuthProvider = ({children})=>{
     };
     async function getRoomListingData(id){
         try{    
-            let data = await fetch(`http://localhost:3000/f/room/${id}`, {
+            let data = await fetch(`https://paradise-hotel-admin-panel-backend.vercel.app/f/room/${id}`, {
                 method : "GET",
                 headers: {
                    "Content-Type": "application/json",
@@ -167,7 +167,7 @@ export let AuthProvider = ({children})=>{
 
     async function getRoomListingDataUpdate(id){
         try{    
-            let data = await fetch(`http://localhost:3000/u/room/${id}`, {
+            let data = await fetch(`https://paradise-hotel-admin-panel-backend.vercel.app/u/room/${id}`, {
                 method : "GET",
                 headers: {
                    "Content-Type": "application/json",
@@ -186,7 +186,7 @@ export let AuthProvider = ({children})=>{
     async function search(d){
         // console.log(d);
         try{    
-            let data = await fetch("http://localhost:3000/search", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/search", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -206,7 +206,7 @@ export let AuthProvider = ({children})=>{
     async function searchReservation(d){
         // console.log(d);
         try{    
-            let data = await fetch("http://localhost:3000/search/reservations", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/search/reservations", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -227,7 +227,7 @@ export let AuthProvider = ({children})=>{
         try{
             let token =  get_token();
             if(type === "pending"){
-                let data = await fetch(`http://localhost:3000/pendingreservation`, {
+                let data = await fetch(`https://paradise-hotel-admin-panel-backend.vercel.app/pendingreservation`, {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -240,7 +240,7 @@ export let AuthProvider = ({children})=>{
             return(res);
             }
             else if(type === "confirm"){
-                let data = await fetch(`http://localhost:3000/confirmedreservation`, {
+                let data = await fetch(`https://paradise-hotel-admin-panel-backend.vercel.app/confirmedreservation`, {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -254,7 +254,7 @@ export let AuthProvider = ({children})=>{
 
             }
             else if(type === "close"){
-                let data = await fetch(`http://localhost:3000/closereservation`, {
+                let data = await fetch(`https://paradise-hotel-admin-panel-backend.vercel.app/closereservation`, {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -268,7 +268,7 @@ export let AuthProvider = ({children})=>{
 
             }
             else{
-                let data = await fetch(`http://localhost:3000/cancelreservation`, {
+                let data = await fetch(`https://paradise-hotel-admin-panel-backend.vercel.app/cancelreservation`, {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -295,7 +295,7 @@ export let AuthProvider = ({children})=>{
         };
         console.log(d);
         try{    
-            let data = await fetch("http://localhost:3000/confirmreservation", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/confirmreservation", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -319,7 +319,7 @@ export let AuthProvider = ({children})=>{
         };
         console.log(d);
         try{    
-            let data = await fetch("http://localhost:3000/cancelreservation2", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/cancelreservation2", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -344,7 +344,7 @@ export let AuthProvider = ({children})=>{
         };
         console.log(d);
         try{    
-            let data = await fetch("http://localhost:3000/closereservation", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/closereservation", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -363,7 +363,7 @@ export let AuthProvider = ({children})=>{
     async function addHotel(data){
         console.log(data);
         try{    
-            let data = await fetch("http://localhost:3000/createhotel", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/createhotel", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",
@@ -385,7 +385,7 @@ export let AuthProvider = ({children})=>{
         // console.log(d);
         let token = get_token();
         try{    
-            let data = await fetch("http://localhost:3000/getHotelData", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/getHotelData", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",

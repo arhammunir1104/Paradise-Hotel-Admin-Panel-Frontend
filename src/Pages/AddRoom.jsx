@@ -64,7 +64,7 @@ function AddRoom() {
                 room_add : userInput.room_add,
                 room_des : userInput.room_des,
             };
-            let data = await fetch("http://localhost:3000/createroom", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/createroom", {
                 method : "POST",
                 headers: {
                    "Content-Type": "application/json",

@@ -73,7 +73,7 @@ function CompleteProfile() {
             formData.append("hotel_logo", e.target.hotel_logo.files[0]);
 
 
-            let data = await fetch("http://localhost:3000/updateHotel", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/updateHotel", {
                 method: "POST",
                 body: formData,
               })

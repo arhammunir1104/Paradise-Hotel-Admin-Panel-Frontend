@@ -69,7 +69,7 @@ function AddHotel() {
             // formData.append("hotel_email", userInput.hotel_email);
             // formData.append("hotel_password", userInput.hotel_password);
 
-            let data = await fetch("http://localhost:3000/createhotel", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/createhotel", {
                 method: "POST",
                 headers: {
                    "Content-Type": "application/json",

@@ -76,7 +76,7 @@ function UpdateHotel() {
             formData.append("hotel_des", userInput.hotel_des);
 
 
-            let data = await fetch("http://localhost:3000/updateHotelData", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/updateHotelData", {
                 method: "POST",
                 body: formData,
               })

@@ -49,7 +49,7 @@ function Login() {
         try{
             async function admin_login(){
                 try{
-                    let data = await fetch("http://localhost:3000/admin_login", {
+                    let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/admin_login", {
                         method : "POST",
                         headers: {
                            "Content-Type": "application/json",
