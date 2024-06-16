@@ -96,13 +96,13 @@ function HotelListing() {
                 <div className='grid col-span-1 h-[fit-content] p-[10px] rounded-[5px] shadow-md'>
                     <div>
                         <p className='font-bold text-[.9rem] text-wrap'>Hotel Id: <span className=' text-[#7b7b7b] font-normal'>{data._id}</span></p>
-                        <p className='font-bold text-[.9rem]'>Hotel Name: <span className=' text-[#7b7b7b] font-normal'> {data.hotel_name}</span></p>
+                        <p className='font-bold text-[.9rem] capitalize'>Hotel Name: <span className=' text-[#7b7b7b] font-normal'> {data.hotel_name}</span></p>
                         <p className='font-bold text-[.9rem]'>Email: <span className=' text-[#7b7b7b] font-normal'>{data.hotel_email}</span></p>
                         <p className='font-bold text-[.9rem]'>Contact No: <span className=' text-[#7b7b7b] font-normal'>{data.hotel_contact_no}</span></p>
                         <p className='font-bold text-[.9rem]'>City: <span className=' text-[#7b7b7b] font-normal'>{data.hotel_city}</span></p>
-                        <p className='font-bold text-[.9rem]'>Account Status: <span className=' text-[#7b7b7b] font-normal'>{data.admin_access}</span></p>
+                        <p className='font-bold text-[.9rem] capitalize'>Account Status: <span className=' text-[#7b7b7b] font-normal'>{data.admin_access}</span></p>
                         <p className='font-bold text-[.9rem]'>Account Creation : <span className=' text-[#7b7b7b] font-normal'>{data.creationData.split('T')[0]}</span></p>
-                        <p className='font-bold text-[.9rem]'>Address: <br /><span className=' text-[#7b7b7b] font-normal'>{data.hotel_add}</span></p>
+                        <p className='font-bold text-[.9rem] capitalize'>Address: <br /><span className=' text-[#7b7b7b] font-normal'>{data.hotel_add}</span></p>
                     </div>
                 </div>
                 <div className='grid col-span-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 p-[10px]'>
