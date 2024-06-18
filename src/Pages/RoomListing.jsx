@@ -180,7 +180,7 @@ function RoomListing() {
             (show)
 
             ?
-            <div className=' relative pt-[60px]'> {/*Main Listing Body  Container Open*/}
+            <div className=' relative pt-[30px]'> {/*Main Listing Body  Container Open*/}
             <div  className='absolute top-0 z-[10] right-0 p-[2%]'>
                 <Stack spacing={2} direction="row">
                     <NavLink to={`/updateroom/${roomId}`}>
