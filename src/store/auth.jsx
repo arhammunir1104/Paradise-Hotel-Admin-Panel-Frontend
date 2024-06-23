@@ -344,9 +344,9 @@ export let AuthProvider = ({children})=>{
         };
         console.log(d);
         try{    
-            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/closereservation", {
+            let data = await fetch("https://paradise-hotel-admin-panel-backend.vercel.app/closereservation2", {
                 method : "POST",
-                headers: {
+                headers: { 
                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify(d)
